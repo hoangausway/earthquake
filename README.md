@@ -29,8 +29,9 @@ npm test
 npm start
 ```
 ## Notes on architecture
-The API is developed with the following architectur in mind:
-[Router] <-> [Middleware] <-> [Service] <-> [Model]
+The API is developed with the following architecture in mind:
+
+**[Router] <-> [Middleware] <-> [Service] <-> [Model]**
 
 ## Notes on the tests made
 The unit tests were made only while developing the [Service] layer of the EARTHQUAKE API.
@@ -48,7 +49,7 @@ curl -X POST -H 'Content-Type: application/json' http://localhost:3000/eqseed/pu
 - Get list of all earthquake records:
 curl http://localhost:3000/earthquakes/
 
-- Read an existing earthquake record (use value of field '_id', for example '5d12900b2842c90f3da3fcc3'):
+- Read an existing earthquake record (use value of field **'_id'**, for example '5d12900b2842c90f3da3fcc3'):
 curl http://localhost:3000/earthquakes/[objectId]
 
 - Read an existing earthquake record using earthquake id (for example 'te38428943st'):
@@ -65,12 +66,12 @@ Base URI: http://localhost:3000/earthquakes/
 
 - Delete earthquake: DELETE /:objectId
 
-- Update Title and Magnitude: POST /id/:id (id is value of the 'id' field from existing earthquake record; it's not objectId of the field '_id')
+- Update Title and Magnitude: POST /id/:id (**id** is value of the **'id'** field from existing earthquake record; it's not objectId of the field **'_id'**)
 
 ## Sample of earthquake record in local database
 See also: https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson_detail.php
 
-Note that the fields _id and __v are created by MongoDB
+Note that the fields **_id** and **__v** are created by MongoDB
 ```
 {
   '_id': '5a5ea8fde43c771e4aa5ea06',
