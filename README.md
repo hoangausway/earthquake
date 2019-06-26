@@ -59,13 +59,13 @@ Prepare a record with the format as sample at the end of this document, then sen
 
 Base URI: http://localhost:3000/earthquakes/
 
-Create earthquake: POST /
+- Create earthquake: POST /
 
-Update earthquake: PUT /:objectId
+- Update earthquake: PUT /:objectId
 
-Delete earthquake: DELETE /:objectId
+- Delete earthquake: DELETE /:objectId
 
-Update Title and Magnitude: POST /id/:id (id is value of the 'id' field from existing earthquake record; it's not objectId of the field '_id')
+- Update Title and Magnitude: POST /id/:id (id is value of the 'id' field from existing earthquake record; it's not objectId of the field '_id')
 
 ## Sample of earthquake record in local database.
 See also: https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson_detail.php
