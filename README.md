@@ -1,9 +1,9 @@
 # Earthquake REST APIs
-## 1. EQSEED API: seeds local database
+## EQSEED API: seeds local database
 - Fetch latest 100 records from earthquakes.usgs.gov to local MongoDB
 - Purge local database for new trial
 
-## 2. EARTHQUAKE API: services standard CRUD tasks and some specific services
+## EARTHQUAKE API: services standard CRUD tasks and some specific services
 - Create, Read, Update, Delete earthquake
 - Get list of all earthquakes
 - Get earthquake by earthquake id (can be found in the existing records at field 'id')
