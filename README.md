@@ -35,6 +35,10 @@ The API is developed with the following architecture in mind:
 
 ## Notes on the tests made
 The unit tests were made only while developing the [Service] layer of the EARTHQUAKE API.
+Test's spec is in the file:
+```
+/tests/unit/earthquake/eq.service.spec.js
+```
 
 ## Using API
 - Check if server up:
