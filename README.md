@@ -1,9 +1,9 @@
-# This project includes 2 REST APIs
-1. EQSEED API: seeds local database
+# REST APIs
+# 1. EQSEED API: seeds local database
 - Fetch latest 100 records from earthquakes.usgs.gov to local MongoDB
 - Purge local database for new trial
 
-2. EARTHQUAKE API: service standard CRUD tasks and some specific services
+# 2. EARTHQUAKE API: service standard CRUD tasks and some specific services
 - Create, Read, Update, Delete earthquake
 - Get list of all earthquakes
 - Get an earthquake by 'id' which can be found in existing records
@@ -31,36 +31,35 @@ The API is developed with the following architectur in mind:
 The unit tests were made only while developing the [Service] layer of the EARTHQUAKE API.
 
 # Using API
-# Check if server up:
+- Check if server up:
 curl http://localhost:3000
 
-# Seed local database (fetch latest 100 records from Earthquake server):
+- Seed local database (fetch latest 100 records from Earthquake server):
 curl http://localhost:3000/eqseed/fetch
 
-# Delete local database for trying from scratch, purge earthquaks collection:
+- Delete local database for trying from scratch, purge earthquaks collection:
 curl -X POST -H 'Content-Type: application/json' http://localhost:3000/eqseed/purge
 
-# Get list of all earthquake records:
+- Get list of all earthquake records:
 curl http://localhost:3000/earthquakes/
 
-# Read an existing earthquake record (use value of field '_id', for example '5d12900b2842c90f3da3fcc3'):
+- Read an existing earthquake record (use value of field '_id', for example '5d12900b2842c90f3da3fcc3'):
 curl http://localhost:3000/earthquakes/[objectId]
 
-# Read an existing earthquake record using earthquake id (for example 'te38428943st'):
+- Read an existing earthquake record using earthquake id (for example 'te38428943st'):
 curl http://localhost:3000/earthquakes/id/[id]
 
 # To create, update, delete
 Prepare a record with the format as sample at the end of this document, then send request to server using the following HTTP methods:
-- Base URI: http://localhost:3000/earthquakes/
-- Create earthquake: POST /
-- Update earthquake: PUT /:objectId
-- Delete earthquake: DELETE /:objectId
-- Update Title and Magnitude: POST /id/:id (id is value of the 'id' field from existing earthquake record; it's not objectId of the field '_id')
+Base URI: http://localhost:3000/earthquakes/
+Create earthquake: POST /
+Update earthquake: PUT /:objectId
+Delete earthquake: DELETE /:objectId
+Update Title and Magnitude: POST /id/:id (id is value of the 'id' field from existing earthquake record; it's not objectId of the field '_id')
 
 # Sample of earthquake record in local database.
-[ See also: https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson_detail.php
-  Note that the field _id and __v are created by MongoDB
-]
+See also: https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson_detail.php
+Note that the field _id and __v are created by MongoDB
 
 {
   '_id': '5a5ea8fde43c771e4aa5ea06',
