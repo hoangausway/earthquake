@@ -6,7 +6,7 @@
 ## 2. EARTHQUAKE API: services standard CRUD tasks and some specific services
 - Create, Read, Update, Delete earthquake
 - Get list of all earthquakes
-- Get an earthquake by 'id' which can be found in existing records
+- Get earthquake by earthquake id (can be found in the existing records at field 'id')
 - Get top ten highest magnitude earthquakes within the last 24 hours
 - Get top ten highest magnitude earthquakes within the last 30 days
 - Get top ten highest magnitude earthquakes within the last 60 days
