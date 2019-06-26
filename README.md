@@ -70,7 +70,7 @@ Base URI: http://localhost:3000/earthquakes/
 ## Sample of earthquake record in local database
 See also: https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson_detail.php
 
-Note that the field _id and __v are created by MongoDB
+Note that the fields _id and __v are created by MongoDB
 ```
 {
   '_id': '5a5ea8fde43c771e4aa5ea06',
