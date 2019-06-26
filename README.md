@@ -55,7 +55,7 @@ curl http://localhost:3000/earthquakes/[objectId]
 curl http://localhost:3000/earthquakes/id/[id]
 
 ## To create, update, delete
-Prepare a record with the format as sample at the end of this document, then send request to server using the following HTTP methods:
+Prepare a record with the format as sample at the end of this document, then send request to server using the following base URI and HTTP methods:
 
 Base URI: http://localhost:3000/earthquakes/
 
