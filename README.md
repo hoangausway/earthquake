@@ -3,7 +3,7 @@
 - Fetch latest 100 records from earthquakes.usgs.gov to local MongoDB
 - Purge local database for new trial
 
-# 2. EARTHQUAKE API: service standard CRUD tasks and some specific services
+# 2. EARTHQUAKE API: services standard CRUD tasks and some specific services
 - Create, Read, Update, Delete earthquake
 - Get list of all earthquakes
 - Get an earthquake by 'id' which can be found in existing records
