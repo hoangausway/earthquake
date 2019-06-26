@@ -67,8 +67,9 @@ Base URI: http://localhost:3000/earthquakes/
 
 - Update Title and Magnitude: POST /id/:id (id is value of the 'id' field from existing earthquake record; it's not objectId of the field '_id')
 
-## Sample of earthquake record in local database.
+## Sample of earthquake record in local database
 See also: https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson_detail.php
+
 Note that the field _id and __v are created by MongoDB
 ```
 {
