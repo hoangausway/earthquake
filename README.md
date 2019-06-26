@@ -52,15 +52,15 @@ curl http://localhost:3000/earthquakes/id/[id]
 - To create, update, delete
 Prepare a record with the format as sample at the end of this document, then send request to server using the following HTTP methods:
 
-Base URI: http://localhost:3000/earthquakes/
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Base URI: http://localhost:3000/earthquakes/
 
-Create earthquake: POST /
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create earthquake: POST /
 
-Update earthquake: PUT /:objectId
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Update earthquake: PUT /:objectId
 
-Delete earthquake: DELETE /:objectId
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete earthquake: DELETE /:objectId
 
-Update Title and Magnitude: POST /id/:id (id is value of the 'id' field from existing earthquake record; it's not objectId of the field '_id')
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Update Title and Magnitude: POST /id/:id (id is value of the 'id' field from existing earthquake record; it's not objectId of the field '_id')
 
 # Sample of earthquake record in local database.
 See also: https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson_detail.php
